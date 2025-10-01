@@ -1,5 +1,4 @@
 require_relative 'ar.rb'
-ActiveRecord::Base.logger = nil
 
 Category.all.each do |i|
   puts "\nCategory: #{i.name}"

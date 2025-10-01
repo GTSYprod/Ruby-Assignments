@@ -18,7 +18,7 @@ require_relative 'ar.rb'
       )
 
       puts " - Created product: #{product.name} ($#{product.price})"
-    rescue ActiveRecord::RecordInvalid => e
+    rescue ActiveRecord::RecordInvalid
 
       puts " - Skipped duplicate, retrying..."
       retry
